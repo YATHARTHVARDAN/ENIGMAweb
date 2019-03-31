@@ -20,14 +20,13 @@
 /*---transitions and animations---*/
 
 body{
-background-image: 
-
+background:
 radial-gradient(
   rgb(255, 255, 255),
   rgb(000, 000, 000)
   
-);
-;
+) center center fixed;
+
 
       background-repeat: no-repeat;
 
@@ -46,8 +45,7 @@ div.enigma_d
 
 img.enigma
 {  vertical-align: center;
-   position:relative;
-   top:3%;
+  
     height: 12%;
     width:10%;
 border-bottom-right-radius: 50%;
@@ -71,8 +69,7 @@ h1.enigma_h
     font-family: header;
   vertical-align: top;
   float:right;
-  position:relative;
-  bottom:60px;
+ margin-top:-0.2%
   margin-right:16%;
 }
 h4.enigma_h4
