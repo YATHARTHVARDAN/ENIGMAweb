@@ -28,9 +28,9 @@ radial-gradient(
   
 ) center center ;
  
-width:100vh;
+
       background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover
 
     max-width:1000px;
     margin-left:auto;
