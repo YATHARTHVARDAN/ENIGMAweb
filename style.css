@@ -1,0 +1,129 @@
+/* FONTs*/
+@font-face{
+    src: url(fonts/Azonix.otf);
+    font-family: header;
+    
+}
+
+/*----fonts----*/
+
+/*transition and animations*/
+
+@keyframes rotate {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to { 
+      -webkit-transform: rotate(360deg);
+    }
+  }
+/*---transitions and animations---*/
+
+body{
+background-image: 
+
+radial-gradient(
+  rgb(255, 255, 255),
+  rgb(000, 000, 000)
+  
+);
+;
+
+      background-repeat: no-repeat;
+
+
+    max-width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+
+div.enigma_d
+{   font-size:300%;
+   
+}
+
+img.enigma
+{  vertical-align: center;
+   position:relative;
+   top:3%;
+    height: 12%;
+    width:10%;
+border-bottom-right-radius: 50%;
+border-bottom-left-radius: 50%;
+border-top-right-radius: 50%;
+border-top-left-radius: 50%;
+margin-left:16%;
+      -webkit-animation-name: rotate; 
+      -webkit-animation-duration: 0.9s; 
+      -webkit-animation-iteration-count: infinite;
+      -webkit-transition-timing-function: linear;
+      animation-name: rotate;
+      animation-duration: 0.9s;
+      animation-iteration-count: infinite;
+      transition-timing-function: linear;
+     
+    }
+
+h1.enigma_h
+{  color:	#243A3E;
+    font-family: header;
+  vertical-align: top;
+  float:right;
+  position:relative;
+  bottom:60px;
+  margin-right:16%;
+}
+h4.enigma_h4
+{font-family: header;
+   font-size:50%;
+   text-align: center;
+   padding-top:3%;
+   padding-bottom:3%;
+height:10%;
+width:100%;
+  }
+  h4.dec
+  {
+    text-align: right;
+  }
+  h4.the
+  {
+    text-align:center;
+  }
+  h4.un
+  {
+    text-align:left;
+  }
+div.push
+{
+  position: relative;
+  bottom: 110%;
+}
+nav{
+  font-family:header;
+  text-align:center;
+  font-size:50%;
+  width:300%;
+}
+ul
+{
+  list-style-type: none; overflow:hidden;
+}
+li
+{
+  float:left; text-align: left;
+
+}
+h4.presents
+{ color:rgb(117, 117, 117);
+  float:right;
+  font-family: header; 
+  margin-right: 70%;
+}
+img.IEEE
+{ margin-left:5%;
+  height: 10%;
+  width:8%;}
+  
