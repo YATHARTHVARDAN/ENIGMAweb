@@ -26,8 +26,8 @@ radial-gradient(
   rgb(255, 255, 255),
   rgb(000, 000, 000)
   
-) center center fixed  ;
-  
+) center center ;
+  height : 100vh;
 
       background-repeat: no-repeat;
   background-size: contain;
