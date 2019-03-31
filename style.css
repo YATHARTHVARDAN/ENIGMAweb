@@ -84,38 +84,6 @@ h4.enigma_h4
 height:10%;
 width:100%;
   }
-  h4.dec
-  {
-    text-align: right;
-  }
-  h4.the
-  {
-    text-align:center;
-  }
-  h4.un
-  {
-    text-align:left;
-  }
-div.push
-{
-  position: relative;
-  bottom: 110%;
-}
-nav{
-  font-family:header;
-  text-align:center;
-  font-size:50%;
-  width:300%;
-}
-ul
-{
-  list-style-type: none; overflow:hidden;
-}
-li
-{
-  float:left; text-align: left;
-
-}
 h4.presents
 { color:rgb(117, 117, 117);
   float:right;
