@@ -21,12 +21,13 @@
 
 body{
 background:
+
 radial-gradient(
   rgb(255, 255, 255),
   rgb(000, 000, 000)
   
-) center center fixed;
-
+) center center fixed  ;
+  
 
       background-repeat: no-repeat;
 
@@ -69,7 +70,9 @@ h1.enigma_h
     font-family: header;
   vertical-align: top;
   float:right;
- margin-top:-0.2%;
+  
+  margin-top:-0.2%;
+ 
   margin-right:16%;
 }
 h4.enigma_h4
@@ -123,4 +126,6 @@ img.IEEE
 { margin-left:5%;
   height: 10%;
   width:8%;}
+  
+
   
