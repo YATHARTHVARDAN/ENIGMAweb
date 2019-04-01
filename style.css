@@ -26,11 +26,11 @@ radial-gradient(
   rgb(255, 255, 255),
   rgb(000, 000, 000)
   
-) center center ;
- 
+) center center fixed  ;
+  
 
       background-repeat: no-repeat;
-  
+background-size:cover;
 
     max-width:1000px;
     margin-left:auto;
@@ -47,8 +47,9 @@ div.enigma_d
 img.enigma
 {  vertical-align: center;
   
-    height: 12%;
-    width:10%;
+    height: 14%;
+    width:12%;
+    margin-top:-1%;
 border-bottom-right-radius: 50%;
 border-bottom-left-radius: 50%;
 border-top-right-radius: 50%;
@@ -59,7 +60,7 @@ margin-left:16%;
       -webkit-animation-iteration-count: infinite;
       -webkit-transition-timing-function: linear;
       animation-name: rotate;
-      animation-duration: 0.9s;
+      animation-duration: 1s;
       animation-iteration-count: infinite;
       transition-timing-function: linear;
      
@@ -71,7 +72,7 @@ h1.enigma_h
   vertical-align: top;
   float:right;
   
-  margin-top:-0.2%;
+  margin-top:-0.05%;
  
   margin-right:16%;
 }
@@ -95,3 +96,4 @@ img.IEEE
   height: 10%;
   width:8%;}
   
+
