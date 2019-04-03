@@ -68,7 +68,10 @@ margin-top:5%;
       animation-duration: 2s;
       animation-iteration-count: infinite;
       transition-timing-function: linear;
-     margin-bottom:40%;
+
+
+      margin-bottom:31%;
+     
     }
 
 h1.enigma_h
@@ -107,10 +110,10 @@ float:right;
 }  
 footer.foot
 {
-  margin-top:45%;
+  margin-top:25%;
 }
  
 
-}
+
 
 
