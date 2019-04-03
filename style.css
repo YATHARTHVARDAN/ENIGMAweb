@@ -31,7 +31,7 @@ radial-gradient(
 
       background-repeat: no-repeat;
 background-size:cover;
-    backgrou
+    background:repeating-radial-gradient();
 
     max-width:1000px;
     margin-left:auto;
