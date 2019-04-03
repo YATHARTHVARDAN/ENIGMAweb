@@ -26,12 +26,12 @@ radial-gradient(
   rgb(255, 255, 255),
   rgb(000, 000, 000)
   
-), #000000 center center fixed  ;
+), repeating center center fixed  ;
   
 
       background-repeat: no-repeat;
 background-size:cover;
-    background:repeating-radial-gradient();
+   
 
     max-width:1000px;
     margin-left:auto;
