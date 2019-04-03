@@ -31,10 +31,13 @@ radial-gradient(
 
       background-repeat: no-repeat;
 background-size:cover;
+    backgrou
 
     max-width:1000px;
     margin-left:auto;
     margin-right:auto;
+    background-position-x: center;
+    background-position-y: bottom;
     
 }
 
@@ -108,10 +111,7 @@ img.fb,img.mail
  
 float:right;
 }  
-footer.foot
-{
-  margin-top:23%;
-}
+
  
 
 
