@@ -109,8 +109,10 @@ img.fb,img.mail
 { height:12%;
  width:12%;
  
-float:right;
+offset-position: 100% 100%;
 }  
+
+
 
  
 
