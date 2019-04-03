@@ -38,29 +38,34 @@ background-size:cover;
     
 }
 
+div.container-fluid
+{
+  margin-top: 20%;
+}
 
 div.enigma_d
 {   font-size:300%;
    
 }
 
-img.enigma
-{  vertical-align: center;
+img.center
+{  
   
-    height: 14%;
-    width:12%;
-    margin-top:-2%;
+    height:50%;
+    width:50%;
+    align-content: center;
 border-bottom-right-radius: 50%;
 border-bottom-left-radius: 50%;
 border-top-right-radius: 50%;
 border-top-left-radius: 50%;
-margin-left:16%;
+margin-left:24%;
+margin-top:5%;
       -webkit-animation-name: rotate; 
-      -webkit-animation-duration: 0.9s; 
+      -webkit-animation-duration: 2s; 
       -webkit-animation-iteration-count: infinite;
       -webkit-transition-timing-function: linear;
       animation-name: rotate;
-      animation-duration: 1s;
+      animation-duration: 2s;
       animation-iteration-count: infinite;
       transition-timing-function: linear;
      
@@ -70,11 +75,9 @@ h1.enigma_h
 {  color:	#243A3E;
     font-family: header;
   vertical-align: top;
-  float:right;
+ text-align: center;
   
-  margin-top:-2%;
- 
-  margin-right:16%;
+
 }
 h4.enigma_h4
 {font-family: header;
@@ -96,5 +99,18 @@ img.IEEE
   height: 10%;
   width:8%;}
   
+img.fb,img.mail
+{ height:12%;
+ width:12%;
+ 
+float:right;
+}  
+footer.foot
+{
+  margin-top:25%;
+}
+ 
+
+}
 
 
