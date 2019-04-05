@@ -48,15 +48,7 @@
 /*---transitions and animations---*/
 
 body{
-background:
 
-radial-gradient(
-  closest-side at 47% 32%,
-  rgb(255, 255, 255) 25% ,
-  rgb(000, 000, 000) 100%
-  
-) center center  ;
-  
 background-color: #000000;
       
 background-repeat:no-repeat;
@@ -106,6 +98,8 @@ h1.enigma_h
     font-family: header;
   vertical-align: top;
  text-align: center;
+ margin-top:15%;
+ margin-bottom:-0px;
   
 
 }
@@ -119,15 +113,15 @@ height:10%;
 width:100%;
   }
 h4.presents
-{ color:rgb(117, 117, 117);
+{ color:rgb(255, 255, 255);
   float:right;
   font-family: header; 
   margin-right: 70%;
 }
 img.IEEE
 { margin-left:5%;
-  height: 10%;
-  width:8%;}
+  height: 16%;
+  width:10%;}
   
 img.fb,img.mail
 { height:12%;
@@ -140,15 +134,41 @@ p.first,p.second,p.last
   font-size:90%;
   font-family: header;
   color: rgb(255, 255, 255);
+
 }
 span.enigma
 {
   font-family: header;
 }
+h4.head
+{ background-image:url(pics/IEEE_DTU_Logo.png);
+font-family:header;
+color:#ffffff;
+font-size:200%;}
 
 
-
+div.header
+{
+  background:radial-gradient(
+   
+    rgb(255, 255, 255) 25% ,
+    rgb(000, 000, 000) 70%
+    
+  ) center center  ;
+}
+div.ieeeinfo
+{
+  background:url(pics/IEEE_DTU_Logo.png);
+  background-size: contain;
+}
  
+p.ieee,p.para
+{
+  color:white;
+  font-family:header;
+  font-size:80%;
+}
+
 
 
 
