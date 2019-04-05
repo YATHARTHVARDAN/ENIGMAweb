@@ -154,7 +154,7 @@ div.main_heading
     rgb(255, 255, 255) 25% ,
     rgb(000, 000, 000) 130%
     
-  ) center center  ; overflow: visible;
+  ) center center  ;
 }
 
  
@@ -164,6 +164,11 @@ p.ieee,p.para
   font-family:header;
   font-size:80%;
 }
+
+
+
+
+
 
 
 
