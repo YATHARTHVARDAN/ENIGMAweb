@@ -84,7 +84,7 @@ border-bottom-left-radius: 50%;
 border-top-right-radius: 50%;
 border-top-left-radius: 50%;
 margin-left:35%;
-margin-top:0%;
+margin-top:18%;
       margin-bottom:28%;
     filter: drop-shadow(3px 3px 5px #000000);
       animation: pic_inc 2s, rotate 2s infinite;
@@ -98,7 +98,7 @@ h1.enigma_h
     font-family: header;
   vertical-align: top;
  text-align: center;
- margin-top:15%;
+ margin-top:0%;
  margin-bottom:-0px;
   
 
@@ -141,26 +141,22 @@ span.enigma
   font-family: header;
 }
 h4.head
-{ background-image:url(pics/IEEE_DTU_Logo.png);
+{ 
 font-family:header;
 color:#ffffff;
 font-size:200%;}
 
 
-div.header
+div.main_heading
 {
   background:radial-gradient(
-   
+   closest-side at 50% 25% ,
     rgb(255, 255, 255) 25% ,
-    rgb(000, 000, 000) 70%
+    rgb(000, 000, 000) 130%
     
-  ) center center  ;
+  ) center center  ; overflow: visible;
 }
-div.ieeeinfo
-{
-  background:url(pics/IEEE_DTU_Logo.png);
-  background-size: contain;
-}
+
  
 p.ieee,p.para
 {
@@ -168,6 +164,11 @@ p.ieee,p.para
   font-family:header;
   font-size:80%;
 }
+
+
+
+
+
 
 
 
