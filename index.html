@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head onload="music()">
         <link href="style.css" type="text/css" rel="stylesheet"/>
         <link href="pics/enigma.png" rel="shortcut icon"/>
         <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet" type="text/css"/>
@@ -11,8 +11,9 @@
     </head>
     <body >
 <div class="main_heading">
-        <img src="pics/IEEE_DTU_Logo_Transparent_White.png" class="IEEE"> <h4 class="presents"> PRESENTS</h4>
-      <div class="header">  
+    <div class="page">
+        <img src="pics/IEEE_DTU_Logo.png" class="IEEE"> <h4 class="presents"> PRESENTS</h4>
+      <div class="header" id="head">  
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-xs-12" >
@@ -28,12 +29,14 @@
            
         </div>
 
-        <img class="center" src="pics/enigma.png" >
-      </div>             
+        <img class="center" src="pics/enigma.png" >  
+      </div>          
+    </div>   
         <div class="text">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-xs-12">
+                        <h3 class="about">ABOUT US</h3>
                         <p class="first">There is nothing quite invigorating as taking the spotlight , twice in a row, and in lieu of this , IEEE DTU CHAPTER presents to you <span class="enigma">ENIGMA</span>, the official not so official encore of TROIKA 2019! </p>
                         <p class="second"><span class="enigma">ENIGMA</span> is a fun packed 2 days event to develop, amplify and challenge your creative potential to find ingenious solutions to existing modern day problems !</p>
                         <p class="last">Let's beat this summer heat with knowledge and fun</p>
@@ -56,7 +59,7 @@
 
 
         <audio autoplay hidden loop>
-                <source src="audio/music.mp3" type="audio/mpeg">
+                <source id="music_load" src="audio/music.mp3" type="audio/mpeg">
             Your browser does not support the audio element
                 </audio>
                </body>
