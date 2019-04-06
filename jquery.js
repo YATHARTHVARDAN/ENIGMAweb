@@ -3,3 +3,8 @@
 
 document.body.style.height = screen.height;
 document.body.style.width = screen.width;
+document.getElementById("head").style.width=screen.width;
+document.getElementById("head").style.height=screen.height;
+
+function music(){
+document.getElementById("music_load").src = "music.mp3";}
