@@ -4,6 +4,10 @@
     font-family: header;
     
 }
+@font-face{
+  src:url(fonts/neuropolitical.ttf);
+  font-family:text;
+}
 
 /*----fonts----*/
 
@@ -38,6 +42,74 @@
  50%{margin-left: 25%; height:50%; width:50%;}
  75%{margin-left: 30%; height:40%; width:40%;}
  100%{height:30%; width:30%;}
+  }
+
+  @-webkit-keyframes reveal {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+         -moz-transform: translateY(100%);
+           -o-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+         -moz-transform: translateY(0);
+           -o-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  
+  @-moz-keyframes reveal {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+         -moz-transform: translateY(100%);
+           -o-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+         -moz-transform: translateY(0);
+           -o-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  
+  @-o-keyframes reveal {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+         -moz-transform: translateY(100%);
+           -o-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+         -moz-transform: translateY(0);
+           -o-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  
+  @keyframes reveal {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+         -moz-transform: translateY(100%);
+           -o-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+         -moz-transform: translateY(0);
+           -o-transform: translateY(0);
+              transform: translateY(0);
+    }
   }
 /*---transitions and animations---*/
 
@@ -127,7 +199,7 @@ img.fb,img.mail
 p.first,p.second,p.last
 {
   font-size:90%;
-  font-family: header;
+  font-family: text;
   color: #243A3E;
 
 }
@@ -148,7 +220,7 @@ font-size:200%;}
 p.ieee,p.para
 {
   color:#243A3E;
-  font-family:header;
+  font-family:text;
   font-size:80%;
 }
 
@@ -168,6 +240,14 @@ h3.about
   font-family:header;
   text-align: center;
   font-size:450%;
+  -webkit-animation: reveal 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+     -moz-animation: reveal 1s ease-in 1 normal forwards;
+       -o-animation: reveal 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+          animation: reveal 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+          -webkit-animation-delay: 5s;
+          -moz-animation-delay: 5s;
+          -o-animation-delay: 5s;
+          animation-delay: 5s;
 }
 
 div.page
@@ -203,11 +283,11 @@ div.header
   8% 89%,
   85% 91%;
   background-size:
-  25% 15%,
+  25% 20%,
   20% 20%,
   25% 25%,
   20% 20%,
-  25% 15%,
+  25% 23%,
   20% 20%,
   25% 25%,
   25% 25%;
@@ -215,6 +295,16 @@ div.header
   background-repeat:no-repeat;
 }
 
+p.copyright,p.love
+{
+  font-size:50%;
+  font-family:header;
+text-align:center;
+}
+p.love
+{
+  font-size:40%;
+}
 
 
 
