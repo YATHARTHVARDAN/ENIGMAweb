@@ -18,13 +18,7 @@
     }
   }
 
-  @keyframes shadow_text{
-    0%{ text-shadow: 2px 2px 5px #000000;}
-    75%{ text-shadow: 2px -2px 5px #000000;}
-    50%{text-shadow: -2px -2px 5px #000000;}
-    25%{ text-shadow: -2px 2px 5px #000000;}
-    100%{text-shadow: 2px 2px 5px #000000;}
-  }
+ 
 
   @keyframes max{
   0%{ font-size: 300%;}
@@ -49,7 +43,7 @@
 
 body{
 
-background-color: #000000;
+background-color: #ffffff;
       
 background-repeat:no-repeat;
    
@@ -59,6 +53,7 @@ background-repeat:no-repeat;
     margin-right:auto;
     background-position-x: center;
     background-position-y: bottom;
+    margin-top:5%;
     
 }
 
@@ -69,13 +64,13 @@ div.container-fluid
 
 div.enigma_d
 {   font-size:300%;
-animation: shadow_text 2s infinite, max 2s;
+animation:  max 2s;
 
 }
 
 img.center
 {  
-  
+    
     height:30%;
     width:30%;
     align-content: center;
@@ -83,9 +78,9 @@ border-bottom-right-radius: 50%;
 border-bottom-left-radius: 50%;
 border-top-right-radius: 50%;
 border-top-left-radius: 50%;
-margin-left:35%;
-margin-top:20%;
-      margin-bottom:28%;
+margin-left:34%;
+margin-top:5%;
+      margin-bottom:30%;
     filter: drop-shadow(3px 3px 5px #000000);
       animation: pic_inc 2s, rotate 2s infinite;
       -webkit-animation: pic_inc 2s, rotate 2s infinite;
@@ -133,7 +128,7 @@ p.first,p.second,p.last
 {
   font-size:90%;
   font-family: header;
-  color: rgb(255, 255, 255);
+  color: #243A3E;
 
 }
 span.enigma
@@ -143,29 +138,82 @@ span.enigma
 h4.head
 { 
 font-family:header;
-color:#ffffff;
+color:#243A3E;
 font-size:200%;}
 
 
-div.main_heading
-{
-  background:radial-gradient(
-   closest-side at 50% 25% ,
-    rgb(255, 255, 255) 25% ,
-    rgb(000, 000, 000) 130%
-    
-  ) center center  ;
-}
+
 
  
 p.ieee,p.para
 {
-  color:white;
+  color:#243A3E;
   font-family:header;
   font-size:80%;
 }
 
 
+div.enigma_d
+{
+  background:
+  radial-gradient(
+    white,black,
+  0.5px);
+
+  margin-bottom:35%;
+}
+
+h3.about
+{
+  font-family:header;
+  text-align: center;
+  font-size:450%;
+}
+
+div.page
+{
+  height:100%;
+  width:100%;
+min-height:1000px;
+}
+div.text
+{
+  margin-top:30%;
+}
+div.header
+{
+   size: 100%;
+  background-image:
+  url(pics/meme.png),
+  url(pics/pubg.png),
+  url(pics/webd.png),
+  url(pics/6.png),
+  url(pics/treasure.png),
+  url(pics/output-onlinepngtools\ \(81\).png),
+  url(pics/8.png),
+  url(pics/tug.png);
+
+  background-position:
+  8% 30%,
+  6% 60%,
+  49% 22%,
+  89% 62%,
+  85% 35%,
+  49% 100%,
+  8% 89%,
+  85% 91%;
+  background-size:
+  25% 15%,
+  20% 20%,
+  25% 25%,
+  20% 20%,
+  25% 15%,
+  20% 20%,
+  25% 25%,
+  25% 25%;
+
+  background-repeat:no-repeat;
+}
 
 
 
