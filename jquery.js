@@ -34,3 +34,5 @@ function check_if_in_view() {
       }
     });
   }
+
+  alert("FOR REGISTRATIONS AND MORE INFO CLICK ON THE RESPECTIVE LOGO");
