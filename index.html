@@ -1,11 +1,171 @@
 <!DOCTYPE html>
 <html>
     <head onload="music()">
+        <meta name="viewport">
         <link href="style.css" type="text/css" rel="stylesheet"/>
         <link href="pics/enigma.png" rel="shortcut icon"/>
         <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet" type="text/css"/>
         <script src="jquery.js"></script>
+       
         <title>ENIGMA</title>
+        <style>
+            @font-face{
+    src: url(fonts/Azonix.otf);
+    font-family: header;
+    
+}
+@font-face{
+  src:url(fonts/expressway.ttf);
+  font-family:text1;
+}
+a.link
+{  margin-top:50%;
+    font-family:text1;
+transform:rotate(90deg);
+    font-size:300%;
+}
+        #myImg1,#myImg3,#myImg4,#myImg5,#myImg6,#myImg7,#myImg8 {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+          }
+          
+          #myImg1:hover, #myImg3:hover,#myImg4:hover,#myImg5:hover,#myImg6:hover,#myImg7:hover,#myImg8:hover {opacity: 0.7;}
+          
+          /* The Modal (background) */
+          .modal1,.modal3,.modal4,.modal5,.modal6,.modal7,.modal8 {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(255, 255, 255); /* Fallback color */
+            background-color: rgba(255, 255, 255, 0.9); /* Black w/ opacity */
+          }
+          
+          /* Modal Content (image) */
+          .modal-content1,.modal-content4,.modal-content5,.modal-content6,.modal-content7,.modal-content8,.modal-content3 {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+          }
+          
+          /* Caption of Modal Image */
+          #caption1,#caption3,#caption4,#caption5,#caption6,#caption7,#caption8 {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            padding: 10px 0;
+            height: 150px;
+            font-size:300%;
+            font-family:text1;
+        }
+          
+          /* Add Animation */
+          .modal-content1,.modal-content4,.modal-content5,.modal-content6,.modal-content7,.modal-content8,.modal-content3, #caption1,#caption3,#caption4,#caption5,#caption6,#caption7,#caption8 {  
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+          }
+          
+          @-webkit-keyframes zoom {
+            from {-webkit-transform:scale(0)} 
+            to {-webkit-transform:scale(1)}
+          }
+          
+          @keyframes zoom {
+            from {transform:scale(0)} 
+            to {transform:scale(1)}
+          }
+          
+          /* The Close Button */
+          .close1,.close2,.close3,.close4,.close5,.close6,.close7,.close8 {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #000000;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+          }
+          
+          .close1:hover,
+          .close1:focus,.close2:hover,.close2:focus,.close3:hover,.close3:focus,.close4:hover,.close4:focus,.close5:hover,.close5:focus,.close6:hover,.close6:focus,.close7:hover,.close7:focus,.close8:hover,.close8:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+          }
+          #myImg2 {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+          }
+          
+          #myImg2:hover {opacity: 0.7;}
+          
+          /* The Modal (background) */
+          .modal2 {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+          }
+          
+          /* Modal Content (image) */
+          .modal-content2 {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+          }
+          
+          /* Caption of Modal Image */
+          #caption2 {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            padding: 10px 0;
+            height: 150px;
+            font-size:300%;
+        font-family:text1;  
+        }
+          
+          /* Add Animation */
+          .modal-content2, #caption2 {  
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+          }
+  
+          
+          /* 100% Image Width on Smaller Screens */
+          @media only screen and (max-width: 700px){
+            .modal-content {
+              width: 100%;
+            }
+          }
+          </style>
+       
 
         
     </head>
@@ -29,9 +189,101 @@
            
         </div>
 
-        <img class="center" src="pics/enigma.png" >  
+<!-- The Modal1 -->
+<div id="myModal1" class="modal1">
+    <span class="close1">&times;</span>
+    <a href="https://forms.gle/sMLqU5SQjXseHShR9" class="link">Click to register</a>
+
+    <img class="modal-content1" id="img01">
+    <div id="caption1"></div>
+  </div>
+  <!-- The Modal1 -->
+<div id="myModal2" class="modal2">
+    <span class="close2">&times;</span>
+    <a href="https://forms.gle/d9h1rj1ABC4N2Ewy8" class="link">Click to register</a>
+
+    <img class="modal-content2" id="img02">
+    <div id="caption2"></div>
+  </div>
+  <div id="myModal3" class="modal3">
+    <span class="close3">&times;</span>
+    <a href="https://forms.gle/QT7M9FSmAGmuaQQb6" class="link">Click to register</a>
+
+    <img class="modal-content3" id="img03">
+    <div id="caption3"></div>
+  </div>
+  <div id="myModal4" class="modal4">
+    <span class="close4">&times;</span>
+    <a href="https://forms.gle/kAqNQVXkq4h29YVn7" class="link">Click to register</a>
+
+    <img class="modal-content4" id="img04">
+    <div id="caption4"></div>
+  </div>
+  <div id="myModal5" class="modal5">
+    <span class="close5">&times;</span>
+    <a href="https://forms.gle/M6BPDSS7AhvHXTEf6" class="link">Click to register</a>
+
+    <img class="modal-content5" id="img05">
+    <div id="caption5"></div>
+  </div>
+  <div id="myModal6" class="modal6">
+    <span class="close6">&times;</span>
+    <a href="https://forms.gle/ufZsR1aL5cZof6XB7" class="link">Click to register</a>
+
+    <img class="modal-content6" id="img06">
+    <div id="caption6"></div>
+  </div>
+  <div id="myModal7" class="modal7">
+    <span class="close7">&times;</span>
+    <a href="https://forms.gle/GZu9xWDyhDDy6YJE6" class="link">Click to register</a>
+
+    <img class="modal-content7" id="img07">
+    <div id="caption7"></div>
+  </div>
+  <div id="myModal8" class="modal8">
+    <span class="close8">&times;</span>
+    <a href="https://forms.gle/sV3nZxZ2a8unchfz8" class="link">Click to register</a>
+
+    <img class="modal-content8" id="img08">
+    <div id="caption8"></div>
+      </div>
+  
+
+        <img src="pics/meme.png" alt='“No man can win every battle, but no man should fall without struggle.”_Peter Parker
+
+        Memes are our favourite pastimes. If you love making memes, come show off your skills.
+        
+        ENIGMA presents “Meme Battle”, a meme-designing competition where participants can choose any plot they desire. The meme with the highest number of laughs wins.
+        ' class="meme" id="myImg1"><img src="pics/webd.png" class="webd" alt="Ever wondered of making a website like Yahoo or Youtube? IEEE DTU gives you a chance to put your skills to test.
+
+        ENIGMA presents “Web Devils”, a website-building competition in which participants will create websites on a random theme given to them as the clock ticks away.
+        " id="myImg2"><img id="myImg3" src="pics/treasure.png" class="treasure" alt='Are you meant to be the next Christopher Columbus? Find out in the game where you are the explorer.
+
+        ENIGMA presents “Treasure Hunt”, a challenge in which the participants will be given a map and they have to seek the hidden treasure I.e. their prize.
+        ' >
+
+<img id="myImg4" src="pics/pubg.png" class="pubg" alt='“If you cage the beast, the beast will get angry.” _Wolverine
+
+Are you one of PubG lovers? Fed up of getting scolded for wasting time playing? Here is your chance to put your skill to use.
+
+ENIGMA presents to you “PubG Tournament”, a PubG gaming challenge where participants play epic tournaments to win.
+'><img class="center" src="pics/enigma.png" ><img id="myImg5" src="pics/6.png" class="six" alt="Do you have it in you to make challenging electronic circuits? Then come, show the path to electricity.
+
+ENIGMA presents “Circuitron”, an electronic circuit designing competition in which participants have to design complex circuits as he clock goes tick tock.
+" > 
+<img src="pics/8.png" class="eight" id="myImg6" alt="“Problem solving is hunting. It is savage pleasure and we are born to it.” _ Thomas Harris
+Do you need some brain food to fire up your neurons? Worry not.
+
+ENIGMA presents to you “Game of codes”, a hackathon where participants will solve mind-racking coding problems and compete to win.
+
+Come, code your way to victory.
+"><img src="pics/it.png" class="it" id="myImg7" alt="Wanna exercise your numb nerves? We give you this chance to prove your mettle and test your 'Brain-o-pedia'Enigma presents 'IT Quiz', a quiz of technical and general knowledge questions that only the best of the best can solve." ><img src="pics/tug.png" class="tug"id="myImg8" alt="Do you excel in creating attractive and captivating logos? Then this event is for you.
+
+ENIGMA presents 'Pixel Plot', a theme-based logo-designing competition in which participants choose out of five themes to design a LOGO.
+" >
       </div>          
     </div>   
+
         <div class="text">
             <div class="container-fluid">
                 <div class="row">
@@ -70,7 +322,186 @@
                 <source id="music_load" src="audio/music.mp3" type="audio/mpeg">
             Your browser does not support the audio element
                 </audio>
-               </body>
+            
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById('myModal1');
+                    
+                    // Get the image and insert it inside the modal - use its "alt" text as a caption
+                    var img = document.getElementById('myImg1');
+                    var modalImg = document.getElementById("img01");
+                    var captionText = document.getElementById("caption1");
+                    img.onclick = function(){
+                      modal.style.display = "block";
+                      modalImg.src = this.src;
+                      captionText.innerHTML = this.alt;
+                    }
+                    
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close1")[0];
+                    
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() { 
+                      modal.style.display = "none";
+                    }
+                    </script>
+                    <script>
+                        // Get the modal
+                        var modal = document.getElementById('myModal2');
+                        
+                        // Get the image and insert it inside the modal - use its "alt" text as a caption
+                        var img = document.getElementById('myImg2');
+                        var modalImg = document.getElementById("img02");
+                        var captionText = document.getElementById("caption2");
+                        img.onclick = function(){
+                          modal.style.display = "block";
+                          modalImg.src = this.src;
+                          captionText.innerHTML = this.alt;
+                        }
+                        
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close2")[0];
+                        
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function() { 
+                          modal.style.display = "none";
+                        }
+                        </script>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('myModal3');
+            
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('myImg3');
+            var modalImg = document.getElementById("img03");
+            var captionText = document.getElementById("caption3");
+            img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+            }
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close3")[0];
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+              modal.style.display = "none";
+            }
+            </script>
+<script>
+    // Get the modal
+    var modal = document.getElementById('myModal4');
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('myImg4');
+    var modalImg = document.getElementById("img04");
+    var captionText = document.getElementById("caption4");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close4")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    </script>
+<script>
+    // Get the modal
+    var modal = document.getElementById('myModal5');
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('myImg5');
+    var modalImg = document.getElementById("img05");
+    var captionText = document.getElementById("caption5");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close5")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    </script>
+<script>
+    // Get the modal
+    var modal = document.getElementById('myModal6');
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('myImg6');
+    var modalImg = document.getElementById("img06");
+    var captionText = document.getElementById("caption6");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close6")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    </script>
+<script>
+    // Get the modal
+    var modal = document.getElementById('myModal7');
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('myImg7');
+    var modalImg = document.getElementById("img07");
+    var captionText = document.getElementById("caption7");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close7")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    </script>
+<script>
+    // Get the modal
+    var modal = document.getElementById('myModal8');
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('myImg8');
+    var modalImg = document.getElementById("img08");
+    var captionText = document.getElementById("caption8");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close8")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    </script>
+
+        </body>
+               
     
     
 </html>
