@@ -8,6 +8,10 @@
   src:url(fonts/Aerolite.otf);
   font-family:text;
 }
+@font-face{
+  src:url(fonts/expressway.ttf);
+  font-family:text2;
+}
 
 /*----fonts----*/
 
@@ -200,7 +204,7 @@ img.fb,img.mail
 p.first,p.second,p.last
 {
   font-size:90%;
-  font-family: text;
+  font-family: text1;
   color: #243A3E;
 
 }
@@ -221,8 +225,8 @@ font-size:200%;}
 p.ieee,p.para
 {
   color:#243A3E;
-  font-family:text;
-  font-size:80%;
+  font-family:text1;
+  font-size:90%;
 }
 
 
