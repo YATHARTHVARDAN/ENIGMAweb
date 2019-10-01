@@ -1,1 +1,1 @@
-the website
+Promotion of open source
